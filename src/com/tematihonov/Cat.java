@@ -1,6 +1,19 @@
 package com.tematihonov;
 
 public class Cat implements Jumpable, Runable, Members, StringNamesOfClasses {
+    int maxH = 1;
+    int maxL = 15;
+
+    @Override
+    public int maxLong() {
+        return maxL;
+    }
+
+    @Override
+    public int maxHeight() {
+        return maxH;
+    }
+
     @Override
     public String name() {
         return "Cat";
