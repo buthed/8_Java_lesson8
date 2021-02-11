@@ -9,7 +9,12 @@ public class Main {
         for (OvercomeObstacles obstacle: obstacles) {
             System.out.println("Преграда " + obstacle.name());
             for (Members member: members) {
-                System.out.println(member.name() + " преодалевает " + obstacle.name());
+                if (obstacle.name() == "Wall"){
+                    System.out.println(member.name() + " перепрыгивает " + obstacle.name());
+                } else {
+                    System.out.println(member.name() + " пробегает " + obstacle.name());
+                }
+
             }
         }
     }
